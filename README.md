@@ -1,4 +1,4 @@
-# Spectrogram-analysys
+# Spectrogram-analysis
 
 # Analysis
 
