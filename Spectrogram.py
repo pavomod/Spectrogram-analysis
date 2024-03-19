@@ -1,3 +1,8 @@
+import librosa
+import numpy as np
+import matplotlib.pyplot as plt
+import librosa.display
+
 def plot_spectrogram(file_path, instrument_name):
     y, sr = librosa.load(file_path, sr=None) # y contiene l'audio come una serie di campioni mentre sr contiene il sample rate
     D = np.abs(librosa.stft(y)) # calcola Short-time Fourier transform, utilizzo np.abs per ottenere la magnitudine della trasformazione, ignorando la fase
